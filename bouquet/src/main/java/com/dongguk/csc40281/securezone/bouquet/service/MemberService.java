@@ -26,6 +26,7 @@ public class MemberService {
 
     @Transactional
     public void createMember(CreateMemberRequestDto createMemberRequestDto) {
+        isDuplicated(createMemberRequestDto.getUsername());
         memberRepository.save(createMemberRequestDto.toEntity(passwordEncoder.encode(createMemberRequestDto.getPassword())));
     }
 
@@ -39,6 +40,16 @@ public class MemberService {
             SecurityContextHolder.getContext().setAuthentication(authentication);
         } catch (AuthenticationException e) {
             throw new LoginException("Invalid username or password");
+        }
+    }
+
+    public void checkDuplicate(String username) {
+        isDuplicated(username);
+    }
+
+    private void isDuplicated(String username) {
+        if (memberRepository.existsByUsername(username)) {
+            throw new IllegalStateException("이미 존재하는 회원입니다.");
         }
     }
 

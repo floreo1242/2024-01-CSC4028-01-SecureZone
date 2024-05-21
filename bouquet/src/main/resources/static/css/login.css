@@ -1,0 +1,220 @@
+.div88 {
+  position: absolute;
+  top: 3.222rem;
+  left: 4.444rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+.buttons-icon36 {
+  width: 2.222rem;
+  position: relative;
+  border-radius: var(--br-9xs);
+  height: 2.222rem;
+  object-fit: cover;
+}
+.social-icons9 {
+  position: absolute;
+  top: 2.667rem;
+  right: 4.444rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-xs);
+}
+.divider9 {
+  position: absolute;
+  top: 0.028rem;
+  left: 4.417rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 71.167rem;
+  height: 0.056rem;
+}
+.log-in {
+  position: relative;
+  line-height: 150%;
+}
+button {
+  position: absolute;
+  top: 34.444rem;
+  left: 40rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--text-primary);
+  box-shadow: var(--button-shadow);
+  width: 16.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-13xl);
+  box-sizing: border-box;
+  font-size: var(--body-text-size);
+  color: var(--color-white);
+}
+.id2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+input[type="text"] {
+  width: 24.222rem;
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  box-shadow: var(--button-shadow);
+  border: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-base);
+  color: var(--color-gray1);
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.input14 {
+  position: absolute;
+  top: 21.444rem;
+  left: 40rem;
+  width: 16.389rem;
+  height: 4.444rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.input15 {
+  position: absolute;
+  top: 27.667rem;
+  left: 40rem;
+  width: 16.389rem;
+  height: 4.444rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.b22 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.headline3 {
+  position: absolute;
+  top: 15.389rem;
+  left: 40rem;
+  width: 34.667rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--title-size);
+}
+.p4 {
+  margin: 0;
+}
+.p5 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.div89 {
+  position: absolute;
+  top: 39.389rem;
+  left: 40.167rem;
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  color: var(--color-gray1);
+}
+.label22 {
+  position: relative;
+  line-height: 0.889rem;
+  font-weight: 600;
+}
+.frame {
+  position: absolute;
+  top: 40.833rem;
+  left: 41.278rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-5xs);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+}
+.div90 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  cursor: pointer;
+}
+.list7 {
+  position: absolute;
+  top: 1.056rem;
+  left: 16.611rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.menu7 {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 7rem;
+  font-size: var(--body-text-size);
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  font-weight: 600;
+}
+.list-icon7 {
+  position: absolute;
+  top: 0.5rem;
+  left: 4rem;
+  width: 2.556rem;
+  height: 2.556rem;
+  overflow: hidden;
+}
+.desktop-navigation-bar7 {
+  position: absolute;
+  top: 4.111rem;
+  right: 0rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.556rem;
+  overflow: hidden;
+}
+.footer9 {
+  position: absolute;
+  width: 100%;
+  top: 52.389rem;
+  right: 0rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  height: 7.611rem;
+  overflow: hidden;
+  font-size: var(--body-text-size);
+}
+.div87 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 60rem;
+  text-align: left;
+  font-size: var(--presets-body2-size);
+  color: var(--text-primary);
+  font-family: var(--presets-body2);
+}

@@ -8,125 +8,151 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 </head>
 <body>
-  <div class="div82">
-    <div class="desktop-navigation-bar7">
-      <img class="list-icon7" alt="" src="./picture/menu.png" id="listIcon" />
-      <div class="menu7" id="menuText">Menu</div>
-      <div class="list7">
-        <div class="div90" id="text">로그인</div>
-        <div class="div90" id="text1">회원가입</div>
-        <div class="div90" id="text2">고객센터</div>
-      </div>
-    </div>
-    <form id="signupForm">
-      <div class="headline2">
-        <b class="b21">회원가입</b>
-      </div>
-      <div class="input-container input9">
-        <div class="label-container">
-          <div class="password-double-check">ID</div>
-          <div class="hint">5~12자의 영문 대소문자와 숫자</div>
-        </div>
-        <input type="text" id="userid" name="userid" placeholder="사용할 아이디를 입력하세요!" required>
-      </div>
-      <div class="input-container input11">
-        <div class="label-container">
-          <div class="password-double-check">User Name</div>
-          <div class="hint">2~12자의 한글 또는 영문</div>
-        </div>
-        <input type="text" id="username" name="username" placeholder="사용할 사용자명을 입력하세요!" required>
-      </div>
-      <div class="input-container input10">
-        <div class="label-container">
-          <div class="password-double-check">Phone Number</div>
-          <div class="hint">10~11자의 숫자</div>
-        </div>
-        <input type="text" id="phonenumber" name="phonenumber" placeholder="휴대전화번호를 입력하세요!" required>
-      </div>
-      <div class="input-container input12">
-        <div class="label-container">
-          <div class="password-double-check">Password</div>
-          <div class="hint">8~16자의 영문, 숫자, 특수문자 포함</div>
-        </div>
-        <input type="password" id="userpassword" name="userpassword" placeholder="영어, 숫자, 특수문자를 포함해 8~16자로 작성하세요!" required>
-      </div>
-      <div class="input-container input13">
-        <div class="password-double-check">Password double check</div>
-        <input type="password" id="doublecheck_ps" name="doublecheck_ps" placeholder="비밀번호를 다시 입력하세요!" required>
-      </div>
-      <button type="submit" class="submit-button"><b>Sign-Up</b></button>
-    </form>
-    <div class="footer9">
-      <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
-      <div class="social-icons9">
-        <img class="buttons-icon36" alt="" src="./picture/youtube.png" />
-        <img class="buttons-icon36" alt="" src="./picture/facebook.png" />
-        <img class="buttons-icon36" alt="" src="./picture/instagram.png" />
-      </div>
-      <div class="divider9"></div>
+<div class="div82">
+  <div class="desktop-navigation-bar7">
+    <img class="list-icon7" alt="" src="./picture/menu.png" id="listIcon" />
+    <div class="menu7" id="menuText">Menu</div>
+    <div class="list7">
+      <div class="div90" id="text">로그인</div>
+      <div class="div90" id="text1">회원가입</div>
+      <div class="div90" id="text2">고객센터</div>
     </div>
   </div>
+  <form id="signupForm">
+    <div class="headline2">
+      <b class="b21">회원가입</b>
+    </div>
+    <div class="input-container input9">
+      <div class="label-container">
+        <div class="password-double-check">ID</div>
+        <div class="hint">5~12자의 영문 대소문자와 숫자</div>
+      </div>
+      <input type="text" id="username" name="username" placeholder="사용할 아이디를 입력하세요!" required>
+    </div>
+    <div class="input-container input11">
+      <div class="label-container">
+        <div class="password-double-check">User Name</div>
+        <div class="hint">2~12자의 한글 또는 영문</div>
+      </div>
+      <div class="username-check">
+        <input type="text" id="name" name="name" placeholder="사용할 사용자명을 입력하세요!" required>
+        <button type="button" id="usernameCheckButton">중복 확인</button>
+      </div>
+    </div>
+    <div class="input-container input10">
+      <div class="label-container">
+        <div class="password-double-check">Phone Number</div>
+        <div class="hint">10~11자의 숫자</div>
+      </div>
+      <input type="text" id="phonenumber" name="phonenumber" placeholder="휴대전화번호를 입력하세요!" required>
+    </div>
+    <div class="input-container input12">
+      <div class="label-container">
+        <div class="password-double-check">Password</div>
+        <div class="hint">8~16자의 영문, 숫자, 특수문자 포함</div>
+      </div>
+      <input type="password" id="userpassword" name="userpassword" placeholder="영어, 숫자, 특수문자를 포함해 8~16자로 작성하세요!" required>
+    </div>
+    <div class="input-container input13">
+      <div class="password-double-check">Password double check</div>
+      <input type="password" id="doublecheck_ps" name="doublecheck_ps" placeholder="비밀번호를 다시 입력하세요!" required>
+    </div>
+    <button type="submit" class="submit-button"><b>Sign-Up</b></button>
+  </form>
+  <div class="footer9">
+    <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
+    <div class="social-icons9">
+      <img class="buttons-icon36" alt="" src="./picture/youtube.png" />
+      <img class="buttons-icon36" alt="" src="./picture/facebook.png" />
+      <img class="buttons-icon36" alt="" src="./picture/instagram.png" />
+    </div>
+    <div class="divider9"></div>
+  </div>
+</div>
 
-  <script>
-    document.getElementById('signupForm').addEventListener('submit', async function(event) {
-      event.preventDefault(); // 기본 폼 제출 방지
+<script>
+  document.getElementById('signupForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // 기본 폼 제출 방지
 
-      const userid = document.getElementById('userid').value;
-      const username = document.getElementById('username').value;
-      const phonenumber = document.getElementById('phonenumber').value;
-      const userpassword = document.getElementById('userpassword').value;
-      const doublecheck_ps = document.getElementById('doublecheck_ps').value;
+    const username = document.getElementById('username').value;
+    const name = document.getElementById('name').value;
+    const phonenumber = document.getElementById('phonenumber').value;
+    const userpassword = document.getElementById('userpassword').value;
+    const doublecheck_ps = document.getElementById('doublecheck_ps').value;
 
-      // 데이터 유효성 검사
-      if (!/^[a-zA-Z0-9]{5,12}$/.test(userid)) {
-        alert('아이디는 5~12자의 영문 대소문자와 숫자로만 구성되어야 합니다.');
+    // 데이터 유효성 검사
+    if (!/^[a-zA-Z0-9]{5,12}$/.test(username)) {
+      alert('아이디는 5~12자의 영문 대소문자와 숫자로만 구성되어야 합니다.');
+      return;
+    }
+    if (!/^[가-힣a-zA-Z]{2,12}$/.test(name)) {
+      alert('사용자명은 2~12자의 한글 또는 영문으로만 구성되어야 합니다.');
+      return;
+    }
+    if (!/^\d{10,11}$/.test(phonenumber)) {
+      alert('휴대전화번호는 10~11자의 숫자로만 구성되어야 합니다.');
+      return;
+    }
+    if (!/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,16}$/.test(userpassword)) {
+      alert('비밀번호는 8~16자의 영문, 숫자, 특수문자를 포함해야 합니다.');
+      return;
+    }
+    if (userpassword !== doublecheck_ps) {
+      alert('비밀번호가 일치하지 않습니다.');
+      return;
+    }
+
+    // 폼 데이터 객체 생성
+    const formData = {
+      username: username,
+      password: userpassword,
+      name: name,
+      phone: phonenumber,
+    };
+
+    // Fetch API를 사용하여 POST 요청
+    try {
+      const response = await fetch('http://localhost:8080/member', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        alert('회원가입에 성공했습니다!');
+        window.location.href = '/login'; // 성공 시 리다이렉트
+      } else {
+        alert('회원가입에 실패했습니다. 다시 시도해주세요.');
+      }
+    } catch (error) {
+      alert('서버와 통신 중 오류가 발생했습니다. 다시 시도해주세요.');
+    }
+  });
+
+  document.getElementById('usernameCheckButton').addEventListener('click', async function() {
+    const username = document.getElementById('username').value;
+
+    if (!/^[a-zA-Z0-9]{5,12}$/.test(username)) {
+      alert('아이디는 5~12자의 영문 대소문자와 숫자로만 구성되어야 합니다.');
+      return;
+    }
+    try {
+      const response = await fetch(`http://localhost:8080/duplicate-check/${username}`, {
+        method: 'GET',
+      });
+      if (response.ok) {
+        alert('사용 가능한 사용자명입니다.');
+      } else {
+        alert('이미 사용 중인 사용자명입니다.');
         return;
       }
-      if (!/^[가-힣a-zA-Z]{2,12}$/.test(username)) {
-        alert('사용자명은 2~12자의 한글 또는 영문으로만 구성되어야 합니다.');
-        return;
-      }
-      if (!/^\d{10,11}$/.test(phonenumber)) {
-        alert('휴대전화번호는 10~11자의 숫자로만 구성되어야 합니다.');
-        return;
-      }
-      if (!/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,16}$/.test(userpassword)) {
-        alert('비밀번호는 8~16자의 영문, 숫자, 특수문자를 포함해야 합니다.');
-        return;
-      }
-      if (userpassword !== doublecheck_ps) {
-        alert('비밀번호가 일치하지 않습니다.');
-        return;
-      }
-
-      // 폼 데이터 객체 생성
-      const formData = {
-        username: userid,
-        password: userpassword,
-        name: username,
-        phone: phonenumber,        
-      };
-
-      // Fetch API를 사용하여 POST 요청
-      try {
-        const response = await fetch('http://localhost:8080/member', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          alert('회원가입에 성공했습니다!');
-          window.location.href = '/login'; // 성공 시 리다이렉트
-        } else {
-          alert('회원가입에 실패했습니다. 다시 시도해주세요.');
-        }
-      } catch (error) {
-        alert('서버와 통신 중 오류가 발생했습니다. 다시 시도해주세요.');
-      }
-    });
-  </script>
+    } catch (error) {
+      alert('서버와 통신 중 오류가 발생했습니다. 다시 시도해주세요.');
+      return;
+    }
+  });
+</script>
 </body>
 </html>

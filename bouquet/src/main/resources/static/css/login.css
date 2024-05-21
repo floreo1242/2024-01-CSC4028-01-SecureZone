@@ -58,7 +58,7 @@ button {
   line-height: 150%;
   font-weight: 500;
 }
-input[type="text"] {
+input[type="text"], input[type="password"] {
   width: 24.222rem;
   flex: 1;
   border-radius: var(--br-5xs);

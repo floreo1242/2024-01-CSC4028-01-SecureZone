@@ -75,10 +75,16 @@
     event.preventDefault(); // 기본 폼 제출 방지
 
     const username = document.getElementById('username').value;
+    const usernameField = document.getElementById('username');
     const name = document.getElementById('name').value;
     const phonenumber = document.getElementById('phonenumber').value;
     const userpassword = document.getElementById('userpassword').value;
     const doublecheck_ps = document.getElementById('doublecheck_ps').value;
+
+    if (usernameField.readOnly === false) {
+      alert('아이디 중복 확인이 필요합니다.')
+      return;
+    }
 
     // 데이터 유효성 검사
     if (!/^[a-zA-Z0-9]{5,12}$/.test(username)) {
@@ -133,6 +139,7 @@
 
   document.getElementById('usernameCheckButton').addEventListener('click', async function() {
     const username = document.getElementById('username').value;
+    const usernameField = document.getElementById('username')
 
     if (!/^[a-zA-Z0-9]{5,12}$/.test(username)) {
       alert('아이디는 5~12자의 영문 대소문자와 숫자로만 구성되어야 합니다.');
@@ -144,6 +151,7 @@
       });
       if (response.ok) {
         alert('사용 가능한 사용자명입니다.');
+        usernameField.readOnly = true
       } else {
         alert('이미 사용 중인 사용자명입니다.');
         return;

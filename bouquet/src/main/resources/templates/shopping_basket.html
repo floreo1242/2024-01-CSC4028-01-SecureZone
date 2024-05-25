@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/shopping_basket.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/shopping_basket.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -37,7 +37,7 @@
             <div class="copy">
               <b class="b">장바구니</b>
             </div>
-            
+
             <div class="vector-parent">
               <form id="checkoutForm">
                 <table>
@@ -127,7 +127,7 @@
         function updateTotalPrice() {
           const checkboxes = document.querySelectorAll('.product-checkbox');
           let totalPrice = 0;
-      
+
           checkboxes.forEach(checkbox => {
             if (checkbox.checked) {
               const row = checkbox.closest('tr');
@@ -135,26 +135,26 @@
               totalPrice += parseInt(totalCell.textContent);
             }
           });
-      
+
           document.getElementById('totalPrice').textContent = totalPrice;
         }
-      
+
         function updateTotalCell(row) {
           const priceCell = row.querySelector('.price-cell');
           const quantityInput = row.querySelector('.quantity-input');
           const totalCell = row.querySelector('.total-cell');
-          
+
           const price = parseInt(priceCell.textContent);
           const quantity = parseInt(quantityInput.value);
-      
+
           totalCell.textContent = price * quantity;
           updateTotalPrice();
         }
-      
+
         function handleCheckout() {
           const checkboxes = document.querySelectorAll('.product-checkbox');
           const selectedProducts = [];
-      
+
           checkboxes.forEach(checkbox => {
             if (checkbox.checked) {
               const row = checkbox.closest('tr');
@@ -167,7 +167,7 @@
               selectedProducts.push(product);
             }
           });
-      
+
           fetch('/api/checkout', {
             method: 'POST',
             headers: {
@@ -187,17 +187,17 @@
           <img
             class="buttons-icon36"
             alt=""
-            src="./picture/youtube.png"
+            src="/picture/youtube.png"
           />
           <img
             class="buttons-icon36"
             alt=""
-            src="./picture/facebook.png"
+            src="/picture/facebook.png"
           />
           <img
             class="buttons-icon36"
             alt=""
-            src="./picture/instagram.png"
+            src="/picture/instagram.png"
           />
         </div>
         <div class="divider9"></div>

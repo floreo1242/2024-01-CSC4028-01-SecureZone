@@ -2,7 +2,9 @@ package com.dongguk.csc40281.securezone.bouquet.controller;
 
 import com.dongguk.csc40281.securezone.bouquet.dto.CreateMemberRequestDto;
 import com.dongguk.csc40281.securezone.bouquet.dto.LoginRequestDto;
+import com.dongguk.csc40281.securezone.bouquet.dto.MemberDto;
 import com.dongguk.csc40281.securezone.bouquet.service.MemberService;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -27,9 +29,10 @@ public class MemberController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody @Valid LoginRequestDto loginRequestDto) {
+    public ResponseEntity<?> login(@RequestBody @Valid LoginRequestDto loginRequestDto, HttpSession session) {
         try {
-            memberService.login(loginRequestDto);
+            MemberDto memberDto = memberService.login(loginRequestDto);
+            session.setAttribute("member", memberDto);
             return ResponseEntity.status(HttpStatus.OK).body("Successfully logged in");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -44,6 +47,12 @@ public class MemberController {
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+    }
+
+    @GetMapping("/logout")
+    public ResponseEntity<?> logout(HttpSession session) {
+        session.invalidate();
+        return ResponseEntity.ok("Successfully logged out");
     }
 
 }

@@ -26,6 +26,8 @@ public class Member {
 
     private String phone;
 
+    private String role;
+
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<Cart> carts = new ArrayList<>();

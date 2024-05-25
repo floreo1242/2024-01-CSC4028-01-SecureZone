@@ -43,6 +43,7 @@ public class CreateMemberRequestDto {
                 .password(encodedPassword)
                 .name(name)
                 .phone(phone)
+                .role("USER")
                 .build();
     }
 

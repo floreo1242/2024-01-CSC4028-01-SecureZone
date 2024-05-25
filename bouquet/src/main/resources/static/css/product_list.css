@@ -1,0 +1,230 @@
+.product-name1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--heading-size);
+  line-height: 110%;
+  font-weight: 600;
+}
+.subheading1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  color: var(--color-gray1);
+}
+.price1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.description1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gray1);
+}
+.b11 {
+  position: relative;
+  line-height: 150%;
+}
+.button10 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--text-primary);
+  box-shadow: var(--button-shadow);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-5xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+}
+.copy6 {
+  position: absolute;
+  width: 40.15%;
+  top: 0rem;
+  right: -0.01%;
+  left: 59.85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacing-s);
+}
+.icon3 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 40rem;
+  height: 30rem;
+  object-fit: cover;
+}
+.copy-container {
+  position: absolute;
+  width: 89.08%;
+  top: 11rem;
+  right: 4.59%;
+  left: 6.33%;
+  height: 32.889rem;
+  font-size: var(--subheading-size);
+}
+.b12 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+  display: inline-block;
+  width: 34.722rem;
+}
+.icon4 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 24.144rem;
+  height: 13.556rem;
+  object-fit: cover;
+}
+.div33 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.div34 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gray1);
+}
+.copy7 {
+  position: absolute;
+  top: 14.889rem;
+  left: 0rem;
+  width: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-9xs);
+}
+.container {
+  position: absolute;
+  top: 3.333rem;
+  left: 0rem;
+  width: 24.144rem;
+  height: 20.333rem;
+}
+.icon5 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 20.433rem;
+  height: 13.556rem;
+  object-fit: cover;
+}
+.group-div {
+  position: absolute;
+  top: 3.333rem;
+  left: 26.389rem;
+  width: 22.5rem;
+  height: 22rem;
+}
+.copy9 {
+  position: absolute;
+  top: 15.111rem;
+  left: 0rem;
+  width: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-9xs);
+}
+.icon6 {
+  position: absolute;
+  top: 0rem;
+  left: 0.056rem;
+  width: 20.478rem;
+  height: 13.556rem;
+  object-fit: cover;
+}
+.copy-parent1 {
+  position: absolute;
+  top: 3.333rem;
+  left: 48.889rem;
+  width: 22.5rem;
+  height: 20.556rem;
+}
+.icon7 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 20.339rem;
+  height: 13.556rem;
+  object-fit: cover;
+}
+.copy-parent2 {
+  position: absolute;
+  top: 29.278rem;
+  left: 0rem;
+  width: 22.5rem;
+  height: 20.333rem;
+}
+.icon9 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 20.367rem;
+  height: 13.556rem;
+  object-fit: cover;
+}
+.copy-parent3 {
+  position: absolute;
+  top: 29.278rem;
+  left: 26.444rem;
+  width: 22.5rem;
+  height: 20.333rem;
+}
+.copy-parent4 {
+  position: absolute;
+  top: 29.278rem;
+  left: 48.889rem;
+  width: 22.5rem;
+  height: 20.333rem;
+}
+.group {
+  position: absolute;
+  top: 47.611rem;
+  left: 4.444rem;
+  width: 93.889rem;
+  height: 49.611rem;
+}
+.parent2 {
+  position: absolute;
+  top: 101.389rem;
+  left: 4.444rem;
+  width: 93.889rem;
+  height: 49.611rem;
+}
+.child {
+  position: absolute;
+  top: 154.722rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  width: 106.667rem;
+  height: 10.889rem;
+}
+.div31 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 60rem;
+  text-align: left;
+  font-size: var(--body-text-size);
+  color: var(--text-primary);
+  font-family: var(--presets-body2);
+}

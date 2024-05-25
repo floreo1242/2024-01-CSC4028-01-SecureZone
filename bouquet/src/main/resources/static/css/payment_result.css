@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.total-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button1 {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button1:hover {
+  background-color: #555;
+}
+.div129 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 60rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--presets-body2-size);
+  color: var(--text-primary);
+  font-family: var(--presets-body2);
+}
+.headline4 {
+  position: absolute;
+  top: 13.444rem;
+  left: 8rem;
+  width: 34.667rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-s);
+  font-size: var(--title-size);
+}
+.b24 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.div130 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+  color: var(--color-gray1);
+}
+.inner {
+  position: absolute;
+  top: 23rem;
+  left: 8rem;
+  width: 63.778rem;
+  height: 24rem;
+}

@@ -35,23 +35,23 @@ body {
   width: 100%;
   height: 3.556rem;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding-left: 2rem; /* Added padding to align items */
+}
+.list-icon7 {
+  position: absolute;
+  top: 0.5rem;
+  left: 4rem;
+  width: 2.556rem;
+  height: 2.556rem;
+  overflow: hidden;
 }
 .menu7 {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 7rem;
   font-size: var(--body-text-size);
   letter-spacing: -0.01em;
   line-height: 150%;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  margin-left: 0.5rem; /* Space between icon and text */
-}
-.list-icon7 {
-  width: 1.556rem;
-  height: 1.556rem;
-  overflow: hidden;
 }
 .list7 {
   position: absolute;
@@ -70,16 +70,15 @@ body {
   cursor: pointer;
 }
 .footer9 {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 52.389rem;
-  right: 0rem;
-  left: 0rem;
+  bottom: 0;
   background-color: var(--color-white);
   height: 7.611rem;
   overflow: hidden;
   font-size: var(--body-text-size);
 }
+
 .div88 {
   position: absolute;
   top: 3.222rem;

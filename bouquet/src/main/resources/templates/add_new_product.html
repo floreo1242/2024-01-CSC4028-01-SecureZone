@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/add_new_product.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="div73">
+      <div class="desktop-navigation-bar7">
+        <div onclick="showPopup()">
+          <img class="list-icon7" alt="" src="./picture/menu.png" id="listIcon" />
+          <div class="menu7" id="menuText">Menu</div>
+        </div>
+        <div class="list7">
+          <div class="div90" id="text" onclick="navigateTo('login.html')">로그인</div>
+          <div class="div90" id="text1" onclick="navigateTo('join_membership.html')">회원가입</div>
+          <div class="div90" id="text2" onclick="navigateTo('customer_center.html')">고객센터</div>
+        </div>
+      </div>
+
+      <script>
+        function navigateTo(url) {
+          window.location.href = url;
+        }
+      </script>
+
+      <div class="headline1">
+        <b class="b20">신상 추가</b>
+        <div class="div77">새로 추가되는 꽃에 대한 설명을 작성하세요</div>
+      </div>
+      <div class="input5">
+        <div class="your-message">꽃 이름</div>
+        <form action="???" method="POST">
+          <input type="text" id="flowername" class="field8" name="flowername" placeholder="새로 추가할 꽃 이름을 입력하세요!" required>
+        </form>
+      </div>
+      <div class="input6">
+        <div class="your-message">가격(한 다발 기준)</div>
+        <form action="???" method="POST">
+          <input type="text" id="price" class="field8" name="price" placeholder="새로 추가할 꽃의 가격(한 다발 기준)을 입력하세요!" required>
+        </form>
+      </div>
+      <div class="input7">
+        <div class="your-message">꽃말</div>
+        <form action="???" method="POST">
+          <input type="text" id="flowerlanguage" class="field9" name="flowerlanguage" placeholder="새로 추가할 꽃의 꽃말을 입력하세요" required>
+        </form>
+      </div>
+      <div class="input8">
+        <div class="your-message">Your message</div>
+        <form action="???" method="POST">
+          <textarea id="multiLineInput" class="field11" name="multiLineInput" rows="10" cols="80" placeholder="추가로 작성할 내용이 있다면 여기에 작성하세요!"></textarea><br>
+        </form>
+      </div>
+      <button type="submit" class="submit-button"><b>추가</b></button>
+
+      <div class="icon16">
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+          <label for="fileUpload">파일 선택:</label><br>
+          <input type="file" id="fileUpload" name="fileUpload" accept="image/*" onchange="previewFile()" required><br><br>
+          <div class="preview" id="preview">
+              <p>미리보기:</p>
+              <img id="previewImage" src="" alt="Image preview">
+          </div>
+        </form>
+      </div>
+    
+    <script>
+    function previewFile() {
+        const preview = document.getElementById('preview');
+        const previewImage = document.getElementById('previewImage');
+        const file = document.getElementById('fileUpload').files[0];
+        const reader = new FileReader();
+    
+        reader.addEventListener('load', function() {
+            // Convert the file to base64 and display it
+            previewImage.src = reader.result;
+            preview.style.display = 'block';
+        }, false);
+    
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+    </script>
+      
+      <div class="footer9">
+        <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
+        <div class="social-icons9">
+          <img
+            class="buttons-icon36"
+            alt=""
+            src="./picture/youtube.png"
+          />
+          <img
+            class="buttons-icon36"
+            alt=""
+            src="./picture/facebook.png"
+          />
+          <img
+            class="buttons-icon36"
+            alt=""
+            src="./picture/instagram.png"
+          />
+        </div>
+        <div class="divider9"></div>
+      </div>
+    </div>
+  </body>
+</html>

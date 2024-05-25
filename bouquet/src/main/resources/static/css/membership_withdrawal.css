@@ -1,0 +1,76 @@
+.b2 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.div13 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+}
+input[type="text"] {
+  width: 18.167rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  box-shadow: var(--button-shadow);
+  border: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+}
+button {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--text-primary);
+  box-shadow: var(--button-shadow);
+  height: 3.444rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xl) var(--padding-13xl);
+  box-sizing: border-box;
+  color: var(--color-white);
+  font-size : 100%;
+}
+.submit-button1 {
+  width: 25.944rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--body-text-size);
+}
+.copy2 {
+  position: absolute;
+  width: 43.85%;
+  top: 21.889rem;
+  right: 28.07%;
+  left: 28.07%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-s);
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--color-gray1);
+}
+.div9 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 60rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--presets-body2-size);
+  color: var(--text-primary);
+  font-family: var(--presets-body2);
+}

@@ -1,0 +1,115 @@
+.b {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.div2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+}
+input[type="text"] {
+  width: 18.167rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  box-shadow: var(--button-shadow);
+  border: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+}
+button {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--text-primary);
+  box-shadow: var(--button-shadow);
+  height: 3.444rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xl) var(--padding-13xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+}
+.submit-button {
+  width: 25.944rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--body-text-size);
+}
+.copy {
+  position: absolute;
+  width: 58.47%;
+  top: 11rem;
+  right: 20.76%;
+  left: 20.77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-s);
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--color-gray1);
+}
+.div6 {
+  position: absolute;
+  top: 25.278rem;
+  left: 77.167rem;
+  width: 30.389rem;
+  height: 30.389rem;
+}
+.div7 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.copy1 {
+  position: absolute;
+  top: 20.222rem;
+  left: 0rem;
+  width: 30.389rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-9xs);
+}
+.icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 30.389rem;
+  height: 19rem;
+  object-fit: cover;
+}
+.copy-parent {
+  position: absolute;
+  top: 24rem;
+  left: 26rem;
+  width: 30.389rem;
+  height: 24.111rem;
+  font-size: var(--subheading-size);
+}
+.div {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 60rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--body-text-size);
+  color: var(--text-primary);
+  font-family: var(--presets-body2);
+}

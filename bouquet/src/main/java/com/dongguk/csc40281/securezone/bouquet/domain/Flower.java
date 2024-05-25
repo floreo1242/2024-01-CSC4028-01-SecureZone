@@ -19,6 +19,8 @@ public class Flower {
 
     private String color;
 
+    private String language;
+
     private int price;
 
     @OneToMany(mappedBy = "flower")

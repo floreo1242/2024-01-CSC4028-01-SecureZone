@@ -17,12 +17,17 @@
         <img class="list-icon7" alt="" src="/picture/menu.png" id="listIcon" />
         <div class="menu7" id="menuText">Menu</div>
         <div class="list7">
-          <div class="div90" id="text">로그인</div>
-          <div class="div90" id="text1">회원가입</div>
-          <div class="div90" id="text2">고객센터</div>
+          <div class="div90" id="text" onclick="navigateTo('/login')">로그인</div>
+          <div class="div90" id="text1" onclick="navigateTo('/join')">회원가입</div>
+          <div class="div90" id="text2" onclick="navigateTo('/customer/center')">고객센터</div>
         </div>
       </div>
 
+      <script>
+        function navigateTo(url) {
+          window.location.href = url;
+        }
+      </script>
 
       <div class="headline3">
         <b class="b22">로그인</b>

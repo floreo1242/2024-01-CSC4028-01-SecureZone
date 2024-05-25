@@ -20,7 +20,7 @@ public class MemberController {
     public ResponseEntity<?> createMember(@RequestBody @Valid CreateMemberRequestDto createMemberRequestDto) {
         try {
             memberService.createMember(createMemberRequestDto);
-            return ResponseEntity.status(HttpStatus.CREATED).body("Successfully created member");
+            return ResponseEntity.status(HttpStatus.OK).body("Successfully created member");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }

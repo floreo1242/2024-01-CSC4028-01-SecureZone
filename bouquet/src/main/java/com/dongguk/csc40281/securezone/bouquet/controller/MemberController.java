@@ -55,4 +55,15 @@ public class MemberController {
         return ResponseEntity.ok("Successfully logged out");
     }
 
+    @DeleteMapping("/member/{memberId}")
+    public ResponseEntity<?> deleteMember(@PathVariable("memberId") Long memberId) {
+        try {
+            memberService.deleteMember(memberId);
+            return ResponseEntity.ok("Successfully deleted member");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+
 }

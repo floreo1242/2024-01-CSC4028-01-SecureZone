@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional(readOnly = true)
@@ -38,6 +40,20 @@ public class FlowerService {
     @Transactional
     public void createFlower(CreateFlowerRequestDto createFlowerRequestDto) {
         flowerRepository.save(createFlowerRequestDto.toEntity());
+    }
+
+    public List<FlowerResponseDto> searchFlower(String keyword) {
+        List<Flower> flowerList = flowerRepository.findByNameContaining(keyword);
+        return flowerList.stream()
+                .map(flower -> FlowerResponseDto.builder()
+                    .id(flower.getId())
+                    .name(flower.getName())
+                    .color(flower.getColor())
+                    .language(flower.getLanguage())
+                    .price(flower.getPrice())
+                    .build()
+                )
+                .collect(Collectors.toList());
     }
 
 }

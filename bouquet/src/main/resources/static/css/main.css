@@ -1,115 +1,117 @@
-.b {
-  align-self: stretch;
-  position: relative;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
+/* main.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
-.div2 {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--subheading-size);
-  line-height: 150%;
-}
-input[type="text"] {
-  width: 18.167rem;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  box-shadow: var(--button-shadow);
-  border: 1px solid var(--color-gainsboro-200);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-base);
-}
-button {
-  flex: 1;
-  border-radius: var(--br-5xs);
-  background-color: var(--text-primary);
-  box-shadow: var(--button-shadow);
-  height: 3.444rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xl) var(--padding-13xl);
-  box-sizing: border-box;
-  font-size: var(--font-size-3xl);
-  color: var(--color-white);
-}
-.submit-button {
-  width: 25.944rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-base);
-  text-align: left;
-  font-size: var(--body-text-size);
-}
-.copy {
-  position: absolute;
-  width: 58.47%;
-  top: 11rem;
-  right: 20.76%;
-  left: 20.77%;
+
+.div21 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: var(--spacing-s);
   text-align: center;
-  font-size: var(--title-size);
-  color: var(--color-gray1);
 }
-.div6 {
-  position: absolute;
-  top: 25.278rem;
-  left: 77.167rem;
-  width: 30.389rem;
-  height: 30.389rem;
+
+.desktop-navigation-bar7 {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.div7 {
-  align-self: stretch;
-  position: relative;
-  line-height: 150%;
+
+.list-icon7 {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
-.copy1 {
-  position: absolute;
-  top: 20.222rem;
-  left: 0rem;
-  width: 30.389rem;
+
+.menu7 {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.list7 {
+  display: flex;
+  gap: 20px;
+}
+
+.div90 {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem; /* Increased font size for the title */
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem; /* Adjusted subtitle font size */
+  color: #666;
+}
+
+.content {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-9xs);
+  align-items: center;
 }
-.icon {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 30.389rem;
-  height: 19rem;
-  object-fit: cover;
-}
-.copy-parent {
-  position: absolute;
-  top: 24rem;
-  left: 26rem;
-  width: 30.389rem;
-  height: 24.111rem;
-  font-size: var(--subheading-size);
-}
-.div {
+
+.submit-button {
   width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  height: 60rem;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--body-text-size);
-  color: var(--text-primary);
-  font-family: var(--presets-body2);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 100%; /* Make the image fill the width */
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer9 {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px 0; /* Reduced padding to decrease footer height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div88 {
+  font-size: 14px;
+}
+
+.social-icons9 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons-icon36 {
+  width: 24px;
+  height: 24px;
+}
+
+.divider9 {
+  width: 80%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 10px;
 }

@@ -1,83 +1,124 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/search_result.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="div21">
-      <div class="desktop-navigation-bar7">
-        <div onclick="showPopup()">
-          <img class="list-icon7" alt="" src="/picture/menu.png" id="listIcon" />
-          <div class="menu7" id="menuText">Menu</div>
-        </div>
-        <div class="list7">
-          <div class="div90" id="text" onclick="navigateTo('/login')">로그인</div>
-          <div class="div90" id="text1" onclick="navigateTo('/join')">회원가입</div>
-          <div class="div90" id="text2" onclick="navigateTo('/customer/center')">고객센터</div>
-        </div>
-      </div>
-
-      <script>
-        function navigateTo(url) {
-          window.location.href = url;
-        }
-      </script>
-
-
-      <div class="copy5">
-        <b class="b9">검색 결과</b>
-        <div class="div26">소중한 사람에게 선물할 꽃을 고르세요!</div>
-        <div class="submit-button2">
-          <form action="???" method="POST">
-            <input type="text" id="flower" name="flower" placeholder="#튤립" required>
-          </form>
-          <button type="submit" class="s-button1"><b>검색</b></button>
-        </div>
-      </div>
-
-      <div class="copy-group">
-        <img class="icon1" alt="" src="/picture/tulip.jpg" />
-
-        <div class="copy3">
-          <div class="product-name">#</div>
-          <input type="text" id="flower" name="flower" placeholder="#튤립" required>
-          <input type="text" id="price" name="price" placeholder="4,500원 (한화 기준, 한 송이 기준)" required>
-          <input type="text" id="description" name="description" placeholder="꽃말 : 사랑의 고백, 매혹, 영원한 애정, 경솔" required>
-          <button type="submit" class="s-button2"><b>장바구니에 담기</b></button>
-        </div>
-      </div>
-      
-
-      <div class="footer9">
-        <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
-        <div class="social-icons9">
-          <img
-            class="buttons-icon36"
-            alt=""
-            src="/picture/youtube.png"
-          />
-          <img
-            class="buttons-icon36"
-            alt=""
-            src="/picture/facebook.png"
-          />
-          <img
-            class="buttons-icon36"
-            alt=""
-            src="/picture/instagram.png"
-          />
-        </div>
-        <div class="divider9"></div>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/search_result.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <style>
+    .results-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .result-item {
+      width: 80%; /* Adjust width as needed */
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .result-item h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .result-item p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="div21">
+  <div class="desktop-navigation-bar7">
+    <div onclick="showPopup()">
+      <img class="list-icon7" alt="" src="/picture/menu.png" id="listIcon" />
+      <div class="menu7" id="menuText">Menu</div>
     </div>
+    <div class="list7">
+      <div class="div90" id="text" onclick="navigateTo('/login')">로그인</div>
+      <div class="div90" id="text1" onclick="navigateTo('/join')">회원가입</div>
+      <div class="div90" id="text2" onclick="navigateTo('/customer/center')">고객센터</div>
+    </div>
+  </div>
 
-  </body>
+  <script>
+    async function fetchSearchResults() {
+      const urlParameter = window.location.search;
+      const urlParams = new URLSearchParams(urlParameter);
+      const flowerName = urlParams.get('searchName');
+
+      console.log(flowerName);
+
+      if (!flowerName) {
+        alert("검색어가 제공되지 않았습니다.");
+        window.location.href = "/";
+        return;
+      }
+
+      try {
+        const response = await fetch('http://localhost:8080/search/' + encodeURIComponent(flowerName), {
+          method: 'GET',
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data.length === 0) {
+            alert("검색결과가 존재하지 않습니다.");
+            window.location.href = "/";
+            return;
+          } else {
+            displaySearchResults(data);
+          }
+        } else {
+          alert("검색결과가 존재하지 않습니다.");
+          window.location.href = "/";
+        }
+      } catch (e) {
+        alert('서버와 통신 중 오류가 발생했습니다. 다시 시도해주세요.');
+        window.location.href = "/";
+      }
+    }
+
+    function displaySearchResults(data) {
+      const resultsContainer = document.getElementById('resultsContainer');
+      resultsContainer.innerHTML = data.map(result => `
+        <div class="result-item">
+          <h2>${result.name}</h2>
+          <p>Price: ${result.price}</p>
+          <p>Color: ${result.color}</p>
+          <p>Language: ${result.language}</p>
+        </div>
+      `).join('');
+    }
+
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchSearchResults);
+  </script>
+
+  <div class="copy5">
+    <b class="b9">검색 결과</b>
+  </div>
+
+  <div class="copy-group results-container" id="resultsContainer">
+    <!-- Search results will be dynamically inserted here -->
+  </div>
+
+  <div class="footer9">
+    <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
+    <div class="social-icons9">
+      <img class="buttons-icon36" alt="" src="/picture/youtube.png" />
+      <img class="buttons-icon36" alt="" src="/picture/facebook.png" />
+      <img class="buttons-icon36" alt="" src="/picture/instagram.png" />
+    </div>
+    <div class="divider9"></div>
+  </div>
+</div>
+</body>
 </html>

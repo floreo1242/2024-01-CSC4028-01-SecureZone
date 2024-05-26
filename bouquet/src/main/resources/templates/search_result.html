@@ -33,7 +33,7 @@
 </head>
 <body>
 <div class="div21">
-  <div th:replace="layout :: navigation_bar"></div>
+  <div th:replace="~{layout :: navigation_bar}"></div>
 
   <script>
     async function fetchSearchResults() {
@@ -100,7 +100,7 @@
     <!-- Search results will be dynamically inserted here -->
   </div>
 
-  <div th:replace="layout :: footer"></div>
+  <div th:replace="~{layout :: footer}"></div>
 </div>
 </body>
 </html>

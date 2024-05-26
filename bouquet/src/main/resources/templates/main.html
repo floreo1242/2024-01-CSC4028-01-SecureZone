@@ -15,7 +15,7 @@
       alert(/*[[${alertMessage}]]*/'default');
     </script>
 
-    <div th:insert="layout :: navigation_bar"></div>
+    <div th:replace="~{layout :: navigation_bar}"></div>
 
     <script>
       function navigateTo(url) {
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div th:replace="layout :: footer"></div>
+    <div th:replace="~{layout :: footer}"></div>
   </div>
 </div>
 </body>

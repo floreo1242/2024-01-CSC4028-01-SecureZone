@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="div14">
-      <div th:replace="layout :: navigation_bar"></div>
+      <div th:replace="~{layout :: navigation_bar}"></div>
 
       <script>
         function navigateTo(url) {
@@ -55,7 +55,7 @@
       </div>
       <img class="hero-image-icon" alt="" src="/picture/person-image.png" />
 
-      <div th:replace="layout :: footer"></div>
+      <div th:replace="~{layout :: footer}"></div>
     </div>
   </body>
 </html>

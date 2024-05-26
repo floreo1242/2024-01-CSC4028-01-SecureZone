@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="div129">
-      <div th:replace="layout :: navigation_bar"></div>
+      <div th:replace="~{layout :: navigation_bar}"></div>
 
       <script>
         function navigateTo(url) {
@@ -87,6 +87,6 @@
       </div>
     </div>
 
-    <div th:replace="layout :: footer"></div>
+    <div th:replace="~{layout :: footer}"></div>
   </body>
 </html>

@@ -1,6 +1,7 @@
 package com.dongguk.csc40281.securezone.bouquet.service;
 
 import com.dongguk.csc40281.securezone.bouquet.domain.Flower;
+import com.dongguk.csc40281.securezone.bouquet.dto.CreateFlowerRequestDto;
 import com.dongguk.csc40281.securezone.bouquet.dto.FlowerResponseDto;
 import com.dongguk.csc40281.securezone.bouquet.repository.FlowerRepository;
 import lombok.RequiredArgsConstructor;
@@ -32,6 +33,11 @@ public class FlowerService {
                 .language(flower.getLanguage())
                 .price(flower.getPrice())
                 .build();
+    }
+
+    @Transactional
+    public void createFlower(CreateFlowerRequestDto createFlowerRequestDto) {
+        flowerRepository.save(createFlowerRequestDto.toEntity());
     }
 
 }

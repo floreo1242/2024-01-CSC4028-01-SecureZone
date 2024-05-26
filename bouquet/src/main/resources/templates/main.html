@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -14,6 +14,10 @@
   <body>
     <div class="div">
       <div class="div87">
+        <script th:if="${alertMessage}" th:inline="javascript">
+          /*<![CDATA[*/
+          alert(/*[[${alertMessage}]]*/'default');
+        </script>
         <div class="desktop-navigation-bar7">
           <div onclick="showPopup()">
             <img class="list-icon7" alt="" src="./picture/menu.png" id="listIcon" />
@@ -36,10 +40,10 @@
         <b class="b">꽃다발 온라인 커스텀 서비스</b>
         <div class="div2">소중한 사람에게 선물할 꽃을 고르세요!</div>
         <div class="submit-button">
-          <form action="???" method="POST">
-            <input type="text" id="flowername" name="flowername" placeholder="꽃 이름을 검색하세요!" required>
-          </form>
+          <form id="searchForm">
+            <input type="text" id="searchName" name="flowername" placeholder="꽃 이름을 검색하세요!" required>
           <button type="submit" class="submit-button"><b>검색</b></button>
+          </form>
         </div>
       </div>
 
@@ -76,5 +80,34 @@
         <div class="divider9"></div>
       </div>
     </div>
+    </div>
+
+    <script>
+      document.getElementById('searchForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // 기본 폼 제출 방지
+
+        const searchName = document.getElementById('searchName').value;
+
+        // 폼 데이터 객체 생성
+        const formData = {
+          searchName: searchName,
+        };
+
+        // Fetch API를 사용하여 POST 요청
+        try {
+          const response = await fetch('http://localhost:8080/search/'+searchName, {
+            method: 'GET',
+          });
+
+          if (response.ok) {
+            alert('회원가입에 성공했습니다!');
+            window.location.href = '/login'; // 성공 시 리다이렉트
+          } else {
+            alert('회원가입에 실패했습니다. 다시 시도해주세요.');
+          }
+        } catch (error) {
+          alert('서버와 통신 중 오류가 발생했습니다. 다시 시도해주세요.');
+        }})
+    </script>
   </body>
 </html>

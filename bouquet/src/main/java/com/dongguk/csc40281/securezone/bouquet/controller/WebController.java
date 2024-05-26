@@ -51,7 +51,7 @@ public class WebController {
         return "add_new_product";
     }
 
-    @GetMapping("/customer/center")
+    @GetMapping("/customer_center")
     public String customerCenter() {
         return "customer_center";
     }

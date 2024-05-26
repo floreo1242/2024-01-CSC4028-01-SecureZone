@@ -1,155 +1,53 @@
-.div94 {
-  width: 11.556rem;
-  position: relative;
-  line-height: 150%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  height: 1.333rem;
-  flex-shrink: 0;
-}
-.menu-item {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  height: 2.222rem;
+/* Adjusted search section styling */
+.submit-button {
+  width: 25.944rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0rem var(--padding-base);
-  box-sizing: border-box;
-}
-.home-icon {
-  width: 1.333rem;
-  position: relative;
-  height: 1.333rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.div95 {
-  flex: 1;
-  position: relative;
-  line-height: 150%;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu-item1 {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-whitesmoke-100);
-  height: 2.222rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0rem var(--padding-base);
-  box-sizing: border-box;
+  justify-content: center;
   gap: var(--gap-base);
-  cursor: pointer;
-}
-.menu-item2 {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  height: 2.222rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0rem var(--padding-base);
-  box-sizing: border-box;
-  gap: var(--gap-base);
-  cursor: pointer;
-}
-.list8 {
-  position: absolute;
-  top: 4.333rem;
-  left: 0.444rem;
-  width: 13.333rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
-}
-.div98 {
-  flex: 1;
-  position: relative;
-  line-height: 150%;
-  font-weight: 600;
-}
-.title {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0rem var(--padding-base);
-}
-.icon17 {
-  width: 1.333rem;
-  position: relative;
-  height: 1.333rem;
-  object-fit: cover;
-}
-.menu-item7 {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  height: 2.222rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0rem var(--padding-base);
-  box-sizing: border-box;
-  gap: var(--gap-base);
-}
-.list9 {
-  position: absolute;
-  top: 15.222rem;
-  left: 0.444rem;
-  width: 11.111rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-}
-.list10 {
-  position: absolute;
-  top: 26.334rem;
-  left: 0.444rem;
-  width: 13.333rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-}
-.title2 {
-  position: absolute;
-  top: 1.333rem;
-  left: 1.333rem;
-  font-size: var(--body-text-size);
-  letter-spacing: -0.01em;
-  line-height: 150%;
-  font-weight: 600;
-}
-.div93 {
-  width: 13.333rem;
-  position: relative;
-  background-color: var(--color-white);
-  border-right: 1px solid var(--color-gainsboro-200);
-  box-sizing: border-box;
-  height: 48.556rem;
-  overflow: hidden;
-  max-width: 90%;
-  max-height: 90%;
   text-align: left;
-  font-size: var(--presets-body2-size);
-  color: var(--text-primary);
-  font-family: var(--presets-body2);
+  font-size: var(--body-text-size);
+  margin-top: 20px; /* Add some space above the search bar */
+  z-index: 1; /* Ensure the search bar stays above other elements */
+  background-color: var(--color-white); /* Set background color to white */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+/* Adjust the copy class to avoid overlap */
+.copy {
+  position: absolute;
+  width: 58.47%;
+  top: 11rem;
+  right: 20.76%;
+  left: 20.77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-s);
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--color-gray1);
+  z-index: 0; /* Ensure the text stays behind the search bar */
+}
+
+.icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 30.389rem;
+  height: 19rem;
+  object-fit: cover;
+  z-index: -1; /* Ensure the image stays behind the text and search bar */
+}
+
+.copy-parent {
+  position: absolute;
+  top: 24rem;
+  left: 26rem;
+  width: 30.389rem;
+  height: 24.111rem;
+  font-size: var(--subheading-size);
+  z-index: 0; /* Ensure this container stays behind the search bar */
 }

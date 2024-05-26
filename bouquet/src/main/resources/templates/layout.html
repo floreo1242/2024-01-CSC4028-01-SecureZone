@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div th:fragment="navigation_bar" class="desktop-navigation-bar7">
+    <div onclick="showPopup()">
+        <img class="list-icon7" alt="" src="./picture/menu.png" id="listIcon" />
+        <div class="menu7" id="menuText">Menu</div>
+    </div>
+    <div class="list7">
+        <div class="div90" id="text" onclick="navigateTo('login')">로그인</div>
+        <div class="div90" id="text0" onclick="navigateTo('logout')">로그아웃</div>
+        <div class="div90" id="text1" onclick="navigateTo('join')">회원가입</div>
+        <div class="div90" id="text2" onclick="navigateTo('customer_center')">고객센터</div>
+    </div>
+</div>
+
+<div th:fragment="footer" class="footer9">
+    <div class="div88">3조 - 서울 중구 필동로 1길 30 신공학관 6119</div>
+    <div class="social-icons9">
+        <img class="buttons-icon36" alt="" src="./picture/youtube.png" />
+        <img class="buttons-icon36" alt="" src="./picture/facebook.png" />
+        <img class="buttons-icon36" alt="" src="./picture/instagram.png" />
+    </div>
+    <div class="divider9"></div>
+</div>
+</body>
+</html>

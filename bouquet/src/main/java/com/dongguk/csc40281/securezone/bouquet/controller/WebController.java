@@ -20,7 +20,11 @@ public class WebController {
     }
 
     @GetMapping("/login")
-    public String login() {
+    public String login(HttpSession session, RedirectAttributes redirect) {
+        if (isLoggedIn(session)) {
+            redirect.addFlashAttribute("alertMessage", "이미 로그인 되어있습니다.");
+            return "redirect:/";
+        }
         return "login";
     }
 

@@ -13,6 +13,7 @@
     <script th:if="${alertMessage}" th:inline="javascript">
       /*<![CDATA[*/
       alert(/*[[${alertMessage}]]*/'default');
+      /*]]>*/
     </script>
 
     <div th:replace="~{layout :: navigation_bar}"></div>
@@ -20,6 +21,17 @@
     <script>
       function navigateTo(url) {
         window.location.href = url;
+      }
+
+      function validateForm() {
+        const searchName = document.getElementById('searchName').value;
+        const regex = /^[a-zA-Z0-9가-힣]{1,7}$/;
+
+        if (!regex.test(searchName) || /[^a-zA-Z0-9가-힣]/.test(searchName)) {
+          alert('검색 이름은 8자리 미만이어야 하며, 특수문자와 공백을 포함할 수 없습니다.');
+          return false; // 폼 제출을 막습니다.
+        }
+        return true; // 폼 제출을 진행합니다.
       }
     </script>
 
@@ -30,7 +42,7 @@
 
     <div class="content">
       <div class="submit-button">
-        <form action="/search">
+        <form action="/search" onsubmit="return validateForm()">
           <input type="text" id="searchName" name="searchName" placeholder="꽃 이름을 검색하세요!" required>
           <button type="submit" class="submit-button"><b>꽃 검색</b></button>
         </form>

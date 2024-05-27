@@ -29,13 +29,13 @@
           <div class="input">
             <div class="id">사용자 이름</div>
             <form action="???" method="POST">
-              <input type="text" id="username" name="username" placeholder="홍길동" required>
+              <input type="text" id="username" name="username" th:placeholder="${member.name}" required>
             </form>
           </div>
           <div class="input1">
             <div class="id">사용자 ID</div>
             <form action="???" method="POST">
-              <input type="text" id="userid" name="userid" placeholder="@gildong" required>
+              <input type="text" id="userid" name="userid" th:placeholder="${member.username}" required>
             </form>
           </div>
           <div class="input2">
@@ -47,7 +47,7 @@
           <div class="input3">
             <div class="id">사용자 전화번호</div>
             <form action="???" method="POST">
-              <input type="text" id="phonenumber" name="phonenumber" placeholder="010-xxxx-xxxx" required>
+              <input type="text" id="phonenumber" name="phonenumber" th:placeholder="${member.phone}" required>
             </form>
           </div>
         </div>

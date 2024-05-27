@@ -1,7 +1,7 @@
-button {
+.button1 {
   position: absolute;
   top: 42rem;
-  left: 39.889rem;
+  left: 35rem;
   border-radius: var(--br-5xs);
   background-color: var(--text-primary);
   box-shadow: var(--button-shadow);
@@ -18,7 +18,7 @@ button {
 .input9 {
   position: absolute;
   top: 14.222rem;
-  left: 40rem;
+  left: 35rem;
   width: 16.389rem;
   height: 4.444rem;
   display: flex;
@@ -36,7 +36,7 @@ button {
 .input10 {
   position: absolute;
   top: 25.111rem;
-  left: 40rem;
+  left: 35rem;
   width: 16.389rem;
   height: 4.444rem;
   display: flex;
@@ -48,7 +48,7 @@ button {
 .input11 {
   position: absolute;
   top: 19.667rem;
-  left: 40rem;
+  left: 35rem;
   width: 16.389rem;
   height: 4.444rem;
   display: flex;
@@ -60,7 +60,7 @@ button {
 .input12 {
   position: absolute;
   top: 30.556rem;
-  left: 40rem;
+  left: 35rem;
   width: 16.389rem;
   height: 4.444rem;
   display: flex;
@@ -72,7 +72,7 @@ button {
 .input13 {
   position: absolute;
   top: 36rem;
-  left: 40rem;
+  left: 35rem;
   width: 16.389rem;
   height: 4.444rem;
   display: flex;
@@ -89,7 +89,7 @@ button {
 .headline2 {
   position: absolute;
   top: 9.444rem;
-  left: 40rem;
+  left: 35rem;
   width: 34.667rem;
   display: flex;
   flex-direction: column;
@@ -107,8 +107,8 @@ button {
   color: var(--text-primary);
   font-family: var(--presets-body2);
 }
-input[type="text"] {
-  width: 24.222rem;
+.input_field {
+  width: 25rem;
   flex: 1;
   border-radius: var(--br-5xs);
   background-color: var(--color-white);

@@ -5,15 +5,12 @@ body {
   margin: 0;
   line-height: normal;
 }
-
 .popup-overlay {
   display: flex;
   flex-direction: column;
   position: fixed;
   inset: 0;
 }
-
-
 .div87 {
   width: 100%;
   position: relative;
@@ -40,8 +37,8 @@ body {
   position: absolute;
   top: 0.5rem;
   left: 4rem;
-  width: 2.556rem;
-  height: 2.556rem;
+  width: 2rem;
+  height: 2rem;
   overflow: hidden;
 }
 .menu7 {
@@ -78,7 +75,6 @@ body {
   overflow: hidden;
   font-size: var(--body-text-size);
 }
-
 .div88 {
   position: absolute;
   top: 3.222rem;

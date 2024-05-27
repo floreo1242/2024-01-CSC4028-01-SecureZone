@@ -24,39 +24,35 @@
     <div class="input-container input9">
       <div class="label-container">
         <div class="password-double-check">ID</div>
-        <div class="hint">5~12자의 영문 대소문자와 숫자</div>
       </div>
-      <input type="text" id="username" name="username" placeholder="사용할 아이디를 입력하세요!" required>
+      <input type="text" id="username" name="username" class="input_field" placeholder="아이디는 5 ~ 12자의 영문 대소문자와 숫자로 구성되어야 합니다!" required>
     </div>
     <div class="input-container input11">
       <div class="label-container">
         <div class="password-double-check">User Name</div>
-        <div class="hint">2~12자의 한글 또는 영문</div>
       </div>
       <div class="username-check">
-        <input type="text" id="name" name="name" placeholder="사용할 사용자명을 입력하세요!" required>
+        <input type="text" id="name" name="name" class="input_field" placeholder="사용자명은 2 ~ 12자의 한글 또는 영문으로 구성되어야 합니다!" required>
         <button type="button" id="usernameCheckButton">중복 확인</button>
       </div>
     </div>
     <div class="input-container input10">
       <div class="label-container">
         <div class="password-double-check">Phone Number</div>
-        <div class="hint">10~11자의 숫자</div>
       </div>
-      <input type="text" id="phonenumber" name="phonenumber" placeholder="휴대전화번호를 입력하세요!" required>
+      <input type="text" id="phonenumber" name="phonenumber" class="input_field" placeholder="휴대전화번호는 10~11자의 숫자로 구성되어야 합니다!" required>
     </div>
     <div class="input-container input12">
       <div class="label-container">
         <div class="password-double-check">Password</div>
-        <div class="hint">8~16자의 영문, 숫자, 특수문자 포함</div>
       </div>
-      <input type="password" id="userpassword" name="userpassword" placeholder="영어, 숫자, 특수문자를 포함해 8~16자로 작성하세요!" required>
+      <input type="password" id="userpassword" name="userpassword" class="input_field" placeholder="비밀번호는 영어, 숫자, 특수문자를 포함해 8~16자로 구성되어야 합니다!" required>
     </div>
     <div class="input-container input13">
       <div class="password-double-check">Password double check</div>
-      <input type="password" id="doublecheck_ps" name="doublecheck_ps" placeholder="비밀번호를 다시 입력하세요!" required>
+      <input type="password" id="doublecheck_ps" name="doublecheck_ps" class="input_field" placeholder="비밀번호를 다시 입력하세요!" required>
     </div>
-    <button type="submit" class="submit-button"><b>Sign-Up</b></button>
+    <button type="submit" class="button1"><b>Sign-Up</b></button>
   </form>
   <div th:replace="~{layout :: footer}"></div>
 </div>

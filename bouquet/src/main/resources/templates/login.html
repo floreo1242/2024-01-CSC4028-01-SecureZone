@@ -82,7 +82,21 @@
         function goToNextPage() {
           window.location.href = 'join';
         }
-      </script>
+
+      // 모든 입력 필드에서 copy, cut, paste 이벤트를 막기 위한 함수
+      function preventCopyCutPaste(event) {
+        event.preventDefault();
+      }
+
+      // 모든 입력 필드에 이벤트 리스너 추가
+      const inputFields = document.querySelectorAll('.input_field');
+      inputFields.forEach(field => {
+        field.addEventListener('copy', preventCopyCutPaste);
+        field.addEventListener('cut', preventCopyCutPaste);
+        field.addEventListener('paste', preventCopyCutPaste);
+      });
+
+    </script>
 
       <div th:replace="~{layout :: footer}"></div>
 

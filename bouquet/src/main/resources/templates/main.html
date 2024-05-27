@@ -28,7 +28,7 @@
         const regex = /^[a-zA-Z0-9가-힣]{1,7}$/;
 
         if (!regex.test(searchName) || /[^a-zA-Z0-9가-힣]/.test(searchName)) {
-          alert('검색 이름은 8자리 미만이어야 하며, 특수문자와 공백을 포함할 수 없습니다.');
+          alert('검색어는 8자리 미만이어야 하며, 특수문자와 공백을 포함할 수 없습니다.');
           return false; // 폼 제출을 막습니다.
         }
         return true; // 폼 제출을 진행합니다.

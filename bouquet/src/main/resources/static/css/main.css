@@ -12,12 +12,14 @@
 }
 input[type="text"] {
   width: 18.167rem;
+  height: 3.444rem;
   border-radius: var(--br-5xs);
   background-color: var(--color-white);
   box-shadow: var(--button-shadow);
   border: 1px solid var(--color-gainsboro-200);
   box-sizing: border-box;
   display: flex;
+  float: left;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;

@@ -21,3 +21,9 @@ server:
       timeout: 30m
       cookie:
         http-only: true
+
+logging:
+  level:
+    org.springframework: INFO
+    com.dongguk.csc40281.securezone: DEBUG
+
